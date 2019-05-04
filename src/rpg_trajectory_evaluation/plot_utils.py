@@ -56,13 +56,13 @@ def boxplot_compare(ax, xlabels,
 def plot_trajectory_top(ax, pos, color, name):
     ax.grid(ls='--', color='0.7')
     # pos_0 = pos - pos[0, :]
-    ax.plot(pos[:, 0], pos[:, 1], color+'-', label=name)
+    ax.plot(pos[:, 0], pos[:, 1], c=color, linestyle='-', label=name)
 
 
 def plot_trajectory_side(ax, pos, color, name):
     ax.grid(ls='--', color='0.7')
     # pos_0 = pos - pos[0, :]
-    ax.plot(pos[:, 0], pos[:, 2], color+'-', label=name)
+    ax.plot(pos[:, 0], pos[:, 2], c=color, linestyle='-', label=name)
 
 
 def plot_aligned_top(ax, p_gt, p_es, n_align_frames):
